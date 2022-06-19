@@ -62,7 +62,7 @@ const Result = () => {
           <div className="lg:px-56 md:px-12 flex flex-wrap justify-between space-y-6 sm:px-56 items-center">
             {results?.map(({ links, title, id, source }) => (
               <div key={id} className="md:w-2/5 w-full">
-                <a href={links?.[0].ref} target="_blank" rel={links?.[0].rel} className='hover:underline'>
+                <a href={links?.[0].ref} target="_blank" rel='noreferrer' className='hover:underline'>
                   <p className="text-lg hover:underline dark:text-blue-300 text-blue-700">
                     {title}
                   </p>
